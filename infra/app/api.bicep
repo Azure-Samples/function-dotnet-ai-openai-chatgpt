@@ -26,9 +26,9 @@ module api '../core/host/functions-flexconsumption.bicep' = {
     tags: union(tags, { 'azd-service-name': serviceName })
     identityType: 'UserAssigned'
     identityId: identityId
+    identityClientId: identityClientId
     appSettings: union(appSettings,
       {
-        AzureWebJobsStorage__clientId : identityClientId
         APPLICATIONINSIGHTS_AUTHENTICATION_STRING: applicationInsightsIdentity
         AZURE_OPENAI_ENDPOINT: aiServiceUrl
         AZURE_CLIENT_ID: identityClientId

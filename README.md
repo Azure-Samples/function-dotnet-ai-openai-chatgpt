@@ -72,9 +72,13 @@ Alternatively you can [create an OpenAI resource](https://portal.azure.com/#crea
 1) Open a new terminal and do the following:
 
 ```bash
+cd app
 func start
 ```
-2) Using your favorite REST client, e.g. [RestClient in VS Code](https://marketplace.visualstudio.com/items?itemName=humao.rest-client), PostMan, curl, make a post.  [test.http](test.http) has been provided to run this quickly.   
+
+Alternatively if you have Visual Studio or Visual Studio Code, you can load the [solution file: chat.sln](chat.sln) and press F5 to Start/Run the solution.
+
+2) Using your favorite REST client, e.g. [RestClient in VS Code](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) or curl, make a post.  [test.http](test.http) has been provided to run this quickly.   
 
 Terminal:
 ```bash

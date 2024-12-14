@@ -97,7 +97,7 @@ module api './app/api.bicep' = {
     tags: tags
     applicationInsightsName: monitoring.outputs.applicationInsightsName
     appServicePlanId: appServicePlan.outputs.id
-    runtimeName: 'dotnet'
+    runtimeName: 'dotnet-isolated'
     runtimeVersion: '8.0'
     storageAccountName: storage.outputs.name
     deploymentStorageContainerName: deploymentStorageContainerName

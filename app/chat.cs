@@ -60,8 +60,8 @@ public class ChatBot
         string assistantId,
         [AssistantPostInput(
             "{assistantId}",
-            "{prompt}",
-            Model = "%AZURE_OPENAI_CHATGPT_DEPLOYMENT%",
+            "{message}",
+            Model = "%CHAT_MODEL_DEPLOYMENT_NAME%",
             ChatStorageConnectionSetting = DefaultChatStorageConnectionSetting,
             CollectionName = DefaultCollectionName
         )]
