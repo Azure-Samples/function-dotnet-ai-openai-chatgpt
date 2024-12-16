@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "function_dotnet_ai_openai_chatgpt": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7212",
+      "launchBrowser": false
+    }
+  }
+}
