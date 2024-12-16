@@ -6,7 +6,7 @@ param kind string = ''
 param reserved bool = true
 param sku object
 
-resource appServicePlan 'Microsoft.Web/serverfarms@2023-12-01' = {
+resource appServicePlan 'Microsoft.Web/serverfarms@2024-04-01' = {
   name: name
   location: location
   tags: tags

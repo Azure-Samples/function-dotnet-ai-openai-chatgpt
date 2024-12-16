@@ -29,11 +29,11 @@ param instanceMemoryMB int = 2048
 param maximumInstanceCount int = 100
 param deploymentStorageContainerName string
 
-resource stg 'Microsoft.Storage/storageAccounts@2022-09-01' existing = {
+resource stg 'Microsoft.Storage/storageAccounts@2023-05-01' existing = {
   name: storageAccountName
 }
 
-resource functions 'Microsoft.Web/sites@2023-12-01' = {
+resource functions 'Microsoft.Web/sites@2024-04-01' = {
   name: name
   location: location
   tags: tags
