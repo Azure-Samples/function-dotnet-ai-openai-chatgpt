@@ -10,9 +10,9 @@ param virtualNetworkSubnetId string = ''
 @allowed(['SystemAssigned', 'UserAssigned'])
 param identityType string
 @description('User assigned identity name')
-param identityId string
+param identityId string = ''
 @description('User assigned identity client id')
-param identityClientId string
+param identityClientId string = ''
 
 // Runtime Properties
 @allowed([
