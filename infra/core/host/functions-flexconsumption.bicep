@@ -77,7 +77,7 @@ resource functions 'Microsoft.Web/sites@2023-12-01' = {
         AzureWebJobsStorage__tableServiceUri: stg.properties.primaryEndpoints.table
         AzureWebJobsStorage__queueServiceUri: stg.properties.primaryEndpoints.queue
         AzureWebJobsStorage__credential : 'managedidentity'
-        AzureWebJobsStorage__clientId : identityClientId
+        AzureWebJobsStorage__clientId : identityType == 'UserAssigned' ? identityClientId : '' 
         APPLICATIONINSIGHTS_CONNECTION_STRING: applicationInsights.properties.ConnectionString
       })
   }
